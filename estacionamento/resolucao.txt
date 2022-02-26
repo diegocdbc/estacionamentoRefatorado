@@ -1,0 +1,8 @@
+Ao meu ver foram três princípios da Solid que foram violados, sendo eles:
+
+Single Responsibility: Onde a Classe Estacionamento estava com mais de uma responsabilidade, sendo assim, eu segreguei... criei a classe Cobranca e a responsabilizei com a função de calcular o valor,tornando o código extensível.
+
+Open/Close Principle: Tornei a Classe estacionamento extensível, ou seja ao alterar o código da parte de cobrança ou adicionar novas lógicas, não alteramos o escopo central da classe estacionamento, já que essa função foi dada a classe Cobranca.
+
+Interface segregation: tornei as interfaces mais específicas, em vez de generalizar apenas com a classe Estacionamento… isso facilita a manutenção e automaticamente cada classe se compromete em implementar todos os seus métodos sem que haja alteração no escopo central delas.
+
